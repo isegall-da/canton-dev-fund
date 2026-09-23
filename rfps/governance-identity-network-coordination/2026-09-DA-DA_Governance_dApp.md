@@ -12,7 +12,7 @@
 
 **RFP / Roadmap Area:** Governance, Identity & Network Coordination
 
-**Champion:** [List Champion](https://github.com/canton-foundation/canton-dev-fund/blob/main/sig-directory.md) **OR** `Needs Champion`
+**Champion:** Itai Segall
 
 **Total Funding Request:** 1,000,000 CC
 
