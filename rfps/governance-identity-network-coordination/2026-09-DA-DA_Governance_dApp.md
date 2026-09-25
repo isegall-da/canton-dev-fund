@@ -133,7 +133,7 @@ This proposal aligns with multiple initiatives in the canton ecosystem, namely:
 
 ### 4. Backward Compatibility
 
-This proposal is fully backward compatible. It is a pure incrememntal functionality,
+This proposal is fully backward compatible. It is a pure incremental functionality,
 which adds the ability for an external voter to vote on bahelf of the node. All available
 functionalities for the node operator are untouched and unaffected in this proposal.
 
