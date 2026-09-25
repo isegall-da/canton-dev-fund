@@ -88,7 +88,7 @@ The read path uses Scan APIs for fetching data, and the write path goes via the 
 compliant wallet to any participant that hosts the voter party.
 
 The SV UI implementation will be refactored to support both modes:
-- When deployed in "SV UI" mode, it will retain the current behavior.
+- When deployed in "non-dapp mode" mode, it will retain the current behavior.
 - When deployed in "voter" mode, it will:
   - Use scan for the read path and CIP-103 wallet APIs for the write path.
   - Hide functionality that is not relevant/supported for voter parties, like
