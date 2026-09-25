@@ -89,7 +89,7 @@ compliant wallet to any participant that hosts the voter party.
 
 The SV UI implementation will be refactored to support both modes:
 - When deployed in "non-dapp mode" mode, it will retain the current behavior.
-- When deployed in "voter" mode, it will:
+- When deployed in "dapp" mode, it will:
   - Use scan for the read path and CIP-103 wallet APIs for the write path.
   - Hide functionality that is not relevant/supported for voter parties, like
     issuing secrets for onboarding validators, and coin-price related functionalities.
