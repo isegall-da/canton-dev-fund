@@ -71,7 +71,7 @@ may also submit votes and vote requests, which are registered on-ledger as the n
 (with a public record that they were submitted via the delegation).
 
 To be explicit, this is the same Daml code funded in M2 of the previous grant mentioned
-above, and availble in the [feature fork](https://github.com/canton-network/splice-sv-voting-dapp/commit/00a2bad8825e62a48096d780421411df6ea92b20#diff-d109e7b29a999dd8e985074e683c151f7fc922eb6e8297d4d7150e475ccb5f4f) already.
+above, and available in the [feature fork](https://github.com/canton-network/splice-sv-voting-dapp/commit/00a2bad8825e62a48096d780421411df6ea92b20#diff-d109e7b29a999dd8e985074e683c151f7fc922eb6e8297d4d7150e475ccb5f4f) already.
 The funding in this grant includes only a final round of review and hardening for
 prod-readiness, and the work for preparing and submitting the CIP required for the code
 changes to be adopted, which was not completed under the previous grant up to the point
