@@ -50,10 +50,12 @@ in the above referenced proposal.
 Develop and deliver a mechanism for an SV node operator to delegate SV
 governance voting to non-operator parties, which may also be an external party
 and hosted on a different validator node, and a dApp for them to do so.
-While this is a step toward separating governance from node operations, it intentionally
-does not modify the voting rights (which remain one vote per node), only adds an additional
-party that is allowed to vote on behalf of the node, and the capability for them to use
-any CIP-103 compliant wallet provider to do so via a governance dApp.
+While this is a step toward separating governance from node operations, this proposal intentionally
+does not modify the voting rights (which remain one vote per Super Validator node). This proposal only adds an additional
+party that is allowed to vote on behalf of the node, plus the capability for that party to use
+any CIP-103 compliant wallet provider to do so via a governance dApp. 
+
+The proposal is compatible with any future expansion of voting to all Super Validator rights owners, as suggested in CIP Governance proposals [raised previously here])https://lists.sync.global/g/cip-discuss/topic/119218581?msg=828#msg828).
 
 ### 2. Implementation Mechanics
 
