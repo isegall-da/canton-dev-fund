@@ -37,7 +37,7 @@ This proposal introduces a mechanism through which (external) parties
 can be delegated by the node operator to be able to vote on behalf of the node,
 and a dApp UI through which they can perform votes. The delegee can choose to
 host their own dApp UI, or use one hosted by the SV node for them. This
-proposal takes over the remaining work out of XXX, which was discontinued after
+proposal takes over the remaining work out of `2026-04-Avro-SV_Governance_dApp`, which was discontinued after
 delivering Milestone 2. The starting point for this proposal is therefore M2
 in the above referenced one.
 
