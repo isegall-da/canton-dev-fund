@@ -85,7 +85,7 @@ allow a user with rights on the voter party to submit the votes using the delega
 any CIP-103 compliant wallet.
 
 The dApp does not assume any access to the SV app's APIs.
-The read path uses Scan APIs for fetching data, and the write path goes via the CIP-103
+The read path uses Scan APIs for fetching data, and the write path goes via any CIP-103
 compliant wallet to any participant that hosts the voter party.
 
 The SV UI implementation will be refactored to support both modes:
