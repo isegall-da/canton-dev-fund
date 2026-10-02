@@ -106,7 +106,7 @@ The SV UI implementation will be refactored to support both modes:
 Note that in terms of implementation, a single implementation will support both modes,
 to minimize discrepencies between the two, and support long-term maintenance of both.
 However, the same implementation will support the two distinct modes, and at deployment
-time, the two UIs will behave differently as configured at deployment time.
+time, the two UIs will behave differently based on their deployment configuration. 
 
 Since the dApp mode of the UI does not rely on connectivity to the SV app, it may be hosted
 either by the node operator (alongside the UI they host for themselves as operators), or
