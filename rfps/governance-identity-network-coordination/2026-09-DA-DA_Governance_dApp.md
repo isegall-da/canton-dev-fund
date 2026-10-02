@@ -39,7 +39,7 @@ and a dApp UI through which they can perform votes. The delegee can choose to
 host their own dApp UI, or use one hosted by the SV node for them. This
 proposal takes over the remaining work out of `2026-04-Avro-SV_Governance_dApp`, which was discontinued after
 delivering Milestone 2. The starting point for this proposal is therefore M2
-in the above referenced one.
+in the above referenced proposal.
 
 ---
 
