@@ -29,7 +29,7 @@ Today, on-chain SV governance is tightly coupled with node
 operations. Every node has a single on-ledger vote, and only the
 SV operator party can submit votes (and vote requests) on behalf of that
 node. This introduces operational complexities for SV operators (who often
-need to seek approval to vote within their organizations from business owners),
+need to seek vote approval from an individual representing an SV rights owner),
 as well as a security risk by reusing the same operator (internal) party for
 all votes.
 
