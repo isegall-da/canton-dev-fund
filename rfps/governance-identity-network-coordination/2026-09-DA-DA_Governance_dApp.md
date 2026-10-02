@@ -210,7 +210,7 @@ as detailed in Milestone 3 deliverables above.
 ### Payment Breakdown by Milestone
 - Milestone 1 _(Community Acceptance)_: 250,000 CC upon committee acceptance
 - Milestone 2 _(Production Readiness)_: 500,000 CC upon committee acceptance
-- Milestone N _(Rollout and Adoption)_: 250,000 CC upon final release and acceptance
+- Milestone 3 _(Rollout and Adoption)_: 250,000 CC upon final release and acceptance
 
 ### Volatility Stipulation
 
