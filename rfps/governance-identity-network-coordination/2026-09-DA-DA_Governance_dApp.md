@@ -55,7 +55,7 @@ does not modify the voting rights (which remain one vote per Super Validator nod
 party that is allowed to vote on behalf of the node, plus the capability for that party to use
 any CIP-103 compliant wallet provider to do so via a governance dApp. 
 
-The proposal is compatible with any future expansion of voting to all Super Validator rights owners, as suggested in CIP Governance proposals [raised previously here])https://lists.sync.global/g/cip-discuss/topic/119218581?msg=828#msg828).
+The proposal is compatible with any future expansion of voting to all Super Validator rights owners, as suggested in CIP Governance proposals [raised previously here](https://lists.sync.global/g/cip-discuss/topic/119218581?msg=828#msg828).
 
 ### 2. Implementation Mechanics
 
