@@ -181,12 +181,12 @@ functionalities for the node operator are untouched and unaffected in this propo
   - We estimate this will be completed around 22 weeks after grant approval.
   - Payment will be due after enabling on MainNet and demonstrating acceptance, not at a specific date, or forfeited if the acceptance criteria are not met within 9 months of grant approval.
 - **Focus:**
-  - Rollout of the feature across all networks, and adoption by SVs.
+  - Rollout of the feature across all networks, and availability to all SVs.
 - **Deliverables / Value Metrics:**
   - Daml Model versions are voted in on DevNet, TestNet and MainNet, and the feature is
     available for use by SV nodes.
-  - At least two different SV node operators configuring delegation to voting parties and
-    submitting at least one vote or vote request each as a delegate via the dApp.
+  - Demonstrated to work on MainNet by at least one vote or vote request casted by a delegate via the dApp
+    (as will be visible in the update history from Scan).
 
 ---
 
