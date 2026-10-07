@@ -29,17 +29,17 @@ Today, on-chain SV governance is tightly coupled with node
 operations. Every node has a single on-ledger vote, and only the
 SV operator party can submit votes (and vote requests) on behalf of that
 node. This introduces operational complexities for SV operators (who often
-need to seek approval to vote within their organizations from business owners),
+need to seek vote approval from an individual representing an SV rights owner),
 as well as a security risk by reusing the same operator (internal) party for
 all votes.
 
 This proposal introduces a mechanism through which (external) parties
 can be delegated by the node operator to be able to vote on behalf of the node,
-and a dApp UI through which they can perform that. The delegee can choose to
+and a dApp UI through which they can perform votes. The delegee can choose to
 host their own dApp UI, or use one hosted by the SV node for them. This
-proposal takes over the remaining work out of XXX, which was discontinued after
+proposal takes over the remaining work out of `2026-04-Avro-SV_Governance_dApp`, which was discontinued after
 delivering Milestone 2. The starting point for this proposal is therefore M2
-in the above referenced one.
+in the above referenced proposal.
 
 ---
 
@@ -50,10 +50,12 @@ in the above referenced one.
 Develop and deliver a mechanism for an SV node operator to delegate SV
 governance voting to non-operator parties, which may also be an external party
 and hosted on a different validator node, and a dApp for them to do so.
-While this is a step toward separating governance from node operations, it intentionally
-does not modify the voting rights (which remain one vote per node), only adds an additional
-party that is allowed to vote on behalf of the node, and the capability for them to use
+While this is a step toward separating governance from node operations, this proposal intentionally
+does not modify the voting rights (which remain one vote per Super Validator node). This proposal only adds an additional
+party that is allowed to vote on behalf of the node, plus the capability for that party to use
 any CIP-103 compliant wallet provider to do so via a governance dApp.
+
+The proposal is compatible with any future expansion of voting to all Super Validator rights owners, as suggested in CIP Governance proposals [raised previously here](https://lists.sync.global/g/cip-discuss/topic/119218581?msg=828#msg828).
 
 ### 2. Implementation Mechanics
 
@@ -69,11 +71,10 @@ may also submit votes and vote requests, which are registered on-ledger as the n
 (with a public record that they were submitted via the delegation).
 
 To be explicit, this is the same Daml code funded in M2 of the previous grant mentioned
-above, and availble in the [feature fork](https://github.com/canton-network/splice-sv-voting-dapp/commit/00a2bad8825e62a48096d780421411df6ea92b20#diff-d109e7b29a999dd8e985074e683c151f7fc922eb6e8297d4d7150e475ccb5f4f) already.
-The funding in this grant includes only a final round of review and hardening for
-prod-readiness, and the work for preparing and submitting the CIP required for the code
-changes to be adopted, which was not completed under the previous grant up to the point
-where it was discontinued.
+above, and available in the [feature fork](https://github.com/canton-network/splice-sv-voting-dapp/commit/00a2bad8825e62a48096d780421411df6ea92b20#diff-d109e7b29a999dd8e985074e683c151f7fc922eb6e8297d4d7150e475ccb5f4f) already.
+The funding in this grant includes only a final round of review of this Daml code, and hardening for
+production readiness, plus the work for preparing and submitting the CIP required for the code
+changes to be adopted, which was not completed under the previous grant.
 
 #### Governance dApp
 
@@ -84,12 +85,12 @@ allow a user with rights on the voter party to submit the votes using the delega
 any CIP-103 compliant wallet.
 
 The dApp does not assume any access to the SV app's APIs.
-The read path uses Scan APIs for fetching data, and the write path goes via the CIP-103
+The read path uses Scan APIs for fetching data, and the write path goes via any CIP-103
 compliant wallet to any participant that hosts the voter party.
 
 The SV UI implementation will be refactored to support both modes:
-- When deployed in "SV UI" mode, it will retain the current behavior.
-- When deployed in "voter" mode, it will:
+- When deployed in "non-dapp" mode, it will retain the current behavior.
+- When deployed in "dapp" mode, it will:
   - Use scan for the read path and CIP-103 wallet APIs for the write path.
   - Hide functionality that is not relevant/supported for voter parties, like
     issuing secrets for onboarding validators, and coin-price related functionalities.
@@ -129,7 +130,7 @@ This proposal aligns with multiple initiatives in the canton ecosystem, namely:
 
 ### 4. Backward Compatibility
 
-This proposal is fully backward compatible. It is a pure incrememntal functionality,
+This proposal is fully backward compatible. It is a pure incremental functionality,
 which adds the ability for an external voter to vote on bahelf of the node. All available
 functionalities for the node operator are untouched and unaffected in this proposal.
 
