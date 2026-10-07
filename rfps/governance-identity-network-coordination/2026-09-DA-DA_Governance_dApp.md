@@ -173,7 +173,8 @@ functionalities for the node operator are untouched and unaffected in this propo
       against at least two standard-compliant wallets, e.g. the Wallet Gateway.
   - Functionality is presented and demonstrated to the SV node operators.
   - Deployment and usage fully documented in the canton-network public documentation.
-  - All code is merged into Splice main, ready for release in the following minor release.
+  - All code is merged into Splice main, or to a final feature branch if the CIP is not yet approved,
+    and ready for release.
 
 ### Milestone 3: Rollout and Adoption
 - **Estimated Delivery:**
