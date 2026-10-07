@@ -98,14 +98,11 @@ The SV UI implementation will be refactored to support both modes:
     The precise details for which functionality is included under this item will be
     determined as part of implementation, and will be easily modified over time as
     the needs change.
-  - Support a single voter party having delegations from multiple nodes, and choosing
-    per each action (e.g. every time a vote is cast) on behalf of which node the vote
-    should be cast.
+  - Support a single voter party having delegations to vote on behalf of different nodes.
 
-Note that in terms of implementation, a single implementation will support both modes,
-to minimize discrepencies between the two, and support long-term maintenance of both.
-However, the same implementation will support the two distinct modes, and at deployment
-time, the two UIs will behave differently as configured at deployment time.
+Note that in terms of implementation, in order to minimize discrepencies between the two,
+and support long-term maintenance of both, a single implementation will support both operating modes.
+At deployment time, the operator hosting the UI will configure in which mode it runs.
 
 Since the dApp mode of the UI does not rely on connectivity to the SV app, it may be hosted
 either by the node operator (alongside the UI they host for themselves as operators), or
@@ -114,10 +111,9 @@ supported, tested and documented.
 
 #### Deployment
 
-Splice SV node deployment tooling, i.e. the Splice node Helm charts, will be augmented
-to support (optionally) deploying the SV governance dApp UI. The same chart will be
-available also for independent hosting of said UI outside of the SV node. Documentation
-for both modes of deployment will be provided.
+A new Helm chart will be introduced for hosting the SV UI in dApp mode, and will be available
+for both SV node operators, as well as other operators, to run on behalf of voters. Documentation
+for hosting by any operator will be provided.
 
 
 ### 3. Architectural Alignment
@@ -143,12 +139,14 @@ functionalities for the node operator are untouched and unaffected in this propo
 
 ### Milestone 1: Community Acceptance
 - **Estimated Delivery:**
-  - 6 weeks after grant approval
+  - The CIP will be submitted for review within 2 weeks after grant approval.
+  - Payment will be due after acceptance of the CIP, not at a specific date, or forfeited if the CIP is not accepted within 4 months of grant approval.
 - **Focus:**
   - Core functionality implemented in Daml, and accepted by the community via a CIP
 - **Deliverables / Value Metrics:**
   - Daml code is complete enough to be voted on in a CIP
   - CIP written, submitted and accepted
+  - Note that Milestone 1 and Milestone 2 will be delivered in parallel, and may be completed in any order.
 
 ### Milestone 2: Production Readiness
 - **Estimated Delivery:**
@@ -163,7 +161,7 @@ functionalities for the node operator are untouched and unaffected in this propo
       to host the voting UI for the voting delegates.
     - Add support for a single party being the governance voting party for more than
       one SV node.
-      At submission time, the user can choose on behalf of which node they are voting.
+      The user can choose on behalf of which node they are voting.
     - SV dApp UI supports the `governance` tab from the existing SV UI,
       but hides all other functionality (which is either broken or irrelevant
       for voting parties).
@@ -171,14 +169,15 @@ functionalities for the node operator are untouched and unaffected in this propo
       and hide/disable changing them via the dApp UI.
     - Happy-path and error-path testing complete, code is production-ready
     - SV dApp UI submits all transaction via standard CIP-103 wallet APIs, and tested
-      against a standard-compliant wallet, e.g. the Wallet Gateway.
+      against at least two standard-compliant wallets, e.g. the Wallet Gateway.
   - Functionality is presented and demonstrated to the SV node operators.
   - Deployment and usage fully documented in the canton-network public documentation.
   - All code is merged into Splice main, ready for release in the following minor release.
 
 ### Milestone 3: Rollout and Adoption
 - **Estimated Delivery:**
-  - 22 weeks after grant approval
+  - We estimate this will be completed around 22 weeks after grant approval.
+  - Payment will be due after enabling on MainNet and demonstrating acceptance, not at a specific date, or forfeited if the acceptance criteria are not met within 9 months of grant approval.
 - **Focus:**
   - Rollout of the feature across all networks, and adoption by SVs.
 - **Deliverables / Value Metrics:**
@@ -206,19 +205,23 @@ as detailed in Milestone 3 deliverables above.
 
 **Total Funding Request:** 1,000,000 CC
 
-### Payment Breakdown by Milestone
-- Milestone 1 _(Community Acceptance)_: 250,000 CC upon committee acceptance
-- Milestone 2 _(Production Readiness)_: 500,000 CC upon committee acceptance
-- Milestone N _(Rollout and Adoption)_: 250,000 CC upon final release and acceptance
+Payment Schedule:
+
+| Milestone | Amount (CC) | Trigger | Recipient |
+| 1 - Community Acceptance | 250,000 | Committee acceptance of deliverables | Digital Asset |
+| 2 - Production Readiness | 500,000 | Committee acceptance of deliverables | Digital Asset |
+| 3 - Rollout and Adoption | 250,000 | Committee acceptance of deliverables | Digital Asset |
+
 
 ### Volatility Stipulation
 
-This project is expected to complete within 6 months.
+This grant is denominated in fixed Canton Coin.
 Should the project timeline extend beyond 6 months due to Committee-requested scope changes, any remaining milestones must be renegotiated to account for significant USD/CC price volatility.
 
 ---
 
 ## Co-Marketing
+
 Upon release, the implementing entity will collaborate with the Foundation on:
 
 - Announcement coordination
