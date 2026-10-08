@@ -141,7 +141,7 @@ functionalities for the node operator are untouched and unaffected in this propo
 ### Milestone 1: Community Acceptance
 - **Estimated Delivery:**
   - The CIP will be submitted for review within 2 weeks after grant approval.
-  - Payment will be due after acceptance of the CIP, not at a specific date, or forfeited if the CIP is not accepted within 4 months of grant approval.
+  - Payment will be due after acceptance of the CIP, not at a specific date, or forfeited if the CIP is not accepted within 6 months of grant approval.
 - **Focus:**
   - Core functionality implemented in Daml, and accepted by the community via a CIP
 - **Deliverables / Value Metrics:**
@@ -179,7 +179,7 @@ functionalities for the node operator are untouched and unaffected in this propo
 ### Milestone 3: Rollout and Adoption
 - **Estimated Delivery:**
   - We estimate this will be completed around 22 weeks after grant approval.
-  - Payment will be due after enabling on MainNet and demonstrating acceptance, not at a specific date, or forfeited if the acceptance criteria are not met within 9 months of grant approval.
+  - Payment will be due after enabling on MainNet and demonstrating acceptance, not at a specific date, or forfeited if the acceptance criteria are not met within 12 months of grant approval.
 - **Focus:**
   - Rollout of the feature across all networks, and availability to all SVs.
 - **Deliverables / Value Metrics:**
